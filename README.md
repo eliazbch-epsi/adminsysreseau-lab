@@ -51,3 +51,6 @@ Configurer un masque de sous-réseau
 Utiliser un switch
 Tester la connectivité avec ping
 Comprendre la communication dans un même réseau
+
+<img width="458" height="368" alt="image" src="https://github.com/user-attachments/assets/5a2e0e88-62c9-4b3c-88dd-ac199d8792ad" />
+
