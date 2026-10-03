@@ -1,30 +1,27 @@
-# adminsysreseau-lab
-# Projet 1 - Communication entre deux réseaux
+# AdminSysReseau Lab
  
-## Objectif
+Bienvenue sur mon laboratoire personnel d'administration systèmes et réseaux.
  
-Comprendre le rôle du switch, du routeur et de la passerelle.
+## À propos
  
-## Schéma
+Je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
  
-PC1 --- Switch1 --- Routeur --- Switch2 --- PC2
+Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage.
  
-## Réseau 1
+## Compétences étudiées
  
-192.168.1.0/24
- 
-## Réseau 2
- 
-192.168.2.0/24
- 
-## Résultat
- 
-Communication entre les deux réseaux
- 
-## Compétences
- 
+- Réseau
 - IPv4
-- Masque de sous-réseau
+- DNS
+- DHCP
 - Switch
 - Routeur
 - Passerelle
+- Linux
+- Windows Server
+ 
+## Projets
+
+### Projet 1 - Communication entre deux réseaux
+
+### Cicso Packet Tracker
