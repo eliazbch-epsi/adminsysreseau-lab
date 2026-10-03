@@ -36,7 +36,7 @@ PC0 --- Switch --- PC1
  
 ## Capture
  
-projet1.png
+<img width="458" height="368" alt="image" src="https://github.com/user-attachments/assets/5a2e0e88-62c9-4b3c-88dd-ac199d8792ad" />
  
 ## Configuration
  
@@ -89,6 +89,4 @@ Les deux machines appartiennent au réseau :
 ```
  
 Elles peuvent donc communiquer directement à travers le switch sans utiliser de routeur ni de passerelle.
-
-<img width="458" height="368" alt="image" src="https://github.com/user-attachments/assets/5a2e0e88-62c9-4b3c-88dd-ac199d8792ad" />
 
