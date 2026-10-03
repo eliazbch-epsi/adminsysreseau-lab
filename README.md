@@ -32,7 +32,7 @@ Faire communiquer deux machines dans le même réseau à l'aide d'un switch.
  
 ## Topologie
  
-PC1 --- Switch --- PC2
+PC0 --- Switch --- PC1
  
 ## Capture
  
