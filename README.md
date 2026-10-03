@@ -6,9 +6,7 @@ Bienvenue sur mon laboratoire personnel d'administration systèmes et réseaux.
  
 Je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
  
-Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage.
-
-### ( Cicso Packet Tracker )
+Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cicso Packet Tracker.
  
 ## Compétences étudiées
  
