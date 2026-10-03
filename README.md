@@ -88,3 +88,51 @@ Les deux machines appartiennent au réseau :
  
 Elles peuvent donc communiquer directement à travers le switch sans utiliser de routeur ni de passerelle.
 
+## Projet 2 - Communication entre deux réseaux
+ 
+### Objectif
+ 
+Faire communiquer deux réseaux différents grâce à un routeur.
+ 
+### Topologie
+
+PC1 --- Switch1 --- Routeur --- Switch2 --- PC2
+
+ ## Capture
+ 
+<img width="795" height="321" alt="image" src="https://github.com/user-attachments/assets/6e6a8962-d079-4d07-9bd7-3f504d46b1a3" />
+
+### Réseau 1
+ 
+```text
+192.168.1.0/24
+PC1 : 192.168.1.10
+Passerelle : 192.168.1.1
+```
+ 
+### Réseau 2
+ 
+```text
+192.168.2.0/24
+PC2 : 192.168.2.10
+Passerelle : 192.168.2.1
+```
+ 
+### Test
+ 
+```bash
+ping 192.168.2.10
+```
+ 
+### Résultat
+ 
+Communication réussie entre les deux réseaux.
+ 
+### Ce que j'ai appris
+ 
+- Routeur
+- Passerelle
+- Routage
+- Réseaux différents
+- Ping
+
