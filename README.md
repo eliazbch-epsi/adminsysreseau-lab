@@ -40,19 +40,19 @@ PC0 --- Switch --- PC1
  
 ## Configuration
  
-### PC1
+### PC0
  
 ```text
 192.168.1.10
 ```
  
-### PC2
+### PC1
  
 ```text
 192.168.1.20
 ```
  
-### Masque
+### Masque De Sous-Réseau
  
 ```text
 255.255.255.0
