@@ -50,7 +50,7 @@ PC1 --- Switch (Commutateur) --- PC2
 
 ### Capture
 
-<img width="458" height="368" alt="image" src="https://github.com/user-attachments/assets/5a2e0e88-62c9-4b3c-88dd-ac199d8792ad" />
+<img width="423" height="330" alt="image" src="https://github.com/user-attachments/assets/73290ef5-eb40-4809-b2b0-bd49b8580ee4" />
 
 ### Configuration
 
