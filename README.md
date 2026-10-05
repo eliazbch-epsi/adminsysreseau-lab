@@ -25,7 +25,7 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - [x] Switch
 - [x] Routeur
 - [x] Passerelle
-- [ ] DHCP
+- [x] DHCP
 - [ ] DNS pratique
 - [ ] VLAN
 - [ ] Linux
@@ -50,7 +50,7 @@ PC1 --- Switch (Commutateur) --- PC2
 
 ### Capture
 
-<img width="423" height="330" alt="image" src="https://github.com/user-attachments/assets/73290ef5-eb40-4809-b2b0-bd49b8580ee4" />
+<img width="413" height="257" alt="image" src="https://github.com/user-attachments/assets/182e9946-dd04-4a51-9e96-fe07984e6f85" />
 
 ### Configuration
 
@@ -120,7 +120,7 @@ PC1 --- Switch1 --- Routeur --- Switch2 --- PC2
 
 ### Capture
 
-<img width="795" height="321" alt="image" src="https://github.com/user-attachments/assets/6e6a8962-d079-4d07-9bd7-3f504d46b1a3" />
+<img width="608" height="140" alt="image" src="https://github.com/user-attachments/assets/a65db666-17d5-40a0-8117-dd33580f58f5" />
 
 ### Réseau 1
 
@@ -192,7 +192,7 @@ afin de joindre PC2.
 
 ## Prochaines étapes
 
-- [ ] DHCP
+- [x] DHCP
 - [ ] DNS pratique
 - [ ] VLAN
 - [ ] Linux Ubuntu Server
@@ -200,3 +200,121 @@ afin de joindre PC2.
 - [ ] Windows Server
 - [ ] Active Directory
 - [ ] PowerShell
+
+## Projet 3 - DHCP
+
+### Objectif
+ 
+Attribuer automatiquement une configuration réseau aux postes du réseau grâce à un serveur DHCP.
+ 
+### Topologie
+ 
+```text
+À compléter
+```
+ 
+### Capture
+ 
+À ajouter
+ 
+### Équipement utilisé
+ 
+```text
+À compléter
+```
+ 
+### Configuration du serveur DHCP
+ 
+```text
+Adresse IP du serveur :
+...
+ 
+Masque :
+...
+ 
+Passerelle :
+...
+```
+ 
+### Configuration de la plage DHCP
+ 
+```text
+Nom du pool :
+...
+ 
+Adresse de départ :
+...
+ 
+Masque :
+...
+ 
+Passerelle :
+...
+ 
+DNS :
+...
+ 
+Nombre maximum d'utilisateurs :
+...
+```
+ 
+### Test
+ 
+```text
+À compléter
+```
+ 
+### Résultat
+ 
+```text
+À compléter
+```
+ 
+### Ce que j'ai appris
+ 
+- ...
+- ...
+- ...
+- ...
+- ...
+ 
+### Explication réseau
+ 
+Le serveur DHCP permet de :
+ 
+```text
+À compléter
+```
+ 
+Lorsque le poste démarre :
+ 
+```text
+À compléter
+```
+ 
+Le serveur DHCP lui attribue automatiquement :
+ 
+```text
+- ...
+- ...
+- ...
+- ...
+```
+ 
+L'utilisateur n'a donc plus besoin de configurer manuellement :
+ 
+```text
+À compléter
+```
+ 
+### Difficultés rencontrées
+ 
+```text
+À compléter
+```
+ 
+### Solution apportée
+ 
+```text
+À compléter
+```
