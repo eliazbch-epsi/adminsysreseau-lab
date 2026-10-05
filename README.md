@@ -4,7 +4,7 @@ Bienvenue sur mon laboratoire personnel d'administration systèmes et réseaux.
 
 ## À propos
 
-Bonjour, je m'appelle Eliaz Bouchon, j'ai 25 ans et je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
+Je m'appelle Eliaz Bouchon, j'ai 25 ans et je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
 
 Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cisco Packet Tracer.
 
