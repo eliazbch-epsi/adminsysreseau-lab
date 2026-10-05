@@ -120,7 +120,7 @@ PC1 --- Switch1 --- Routeur --- Switch2 --- PC2
 
 ### Capture
 
-<img width="429" height="353" alt="image" src="https://github.com/user-attachments/assets/2e476880-40c6-468f-82ab-9a8d710ab74a" />
+<img width="795" height="321" alt="image" src="https://github.com/user-attachments/assets/6e6a8962-d079-4d07-9bd7-3f504d46b1a3" />
 
 ### Réseau 1
 
