@@ -134,7 +134,7 @@ Communication réussie entre les deux réseaux.
 - Réseaux différents
 - Ping
 
-Explication réseau
+## Explication réseau
  
 PC1 constate que la destination 192.168.2.10
 n'appartient pas à son réseau local.
