@@ -6,7 +6,7 @@ Bienvenue sur mon laboratoire personnel d'administration systèmes et réseaux.
  
 Je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
  
-Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cicso Packet Tracker.
+Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cicso Packet Tracer.
  
 ## Compétences étudiées
  
@@ -14,13 +14,13 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - IPv4
 - DNS
 - DHCP
-- Switch
+- Switch (Commutateur)
 - Routeur
 - Passerelle
  
 ## Projets
 
-### Projet 1 - Communication entre deux réseaux
+### Projet 1 - Communication dans le même réseau
  
 ## Objectif
  
@@ -28,7 +28,7 @@ Faire communiquer deux machines dans le même réseau à l'aide d'un switch.
  
 ## Topologie
  
-PC0 --- Switch --- PC1
+PC0 --- Switch (commutateur) --- PC1
  
 ## Capture
  
@@ -72,7 +72,7 @@ ping 192.168.1.20
  
 - Configurer une adresse IPv4
 - Configurer un masque de sous-réseau
-- Utiliser un switch
+- Utiliser un switch (commutateur)
 - Tester la connectivité avec ping
 - Comprendre la communication dans un même réseau
  
@@ -84,7 +84,7 @@ Les deux machines appartiennent au réseau :
 192.168.1.0/24
 ```
  
-Elles peuvent donc communiquer directement à travers le switch sans utiliser de routeur ni de passerelle.
+Elles peuvent donc communiquer directement à travers le switch (commutateur) sans utiliser de routeur ni de passerelle.
 
 ## Projet 2 - Communication entre deux réseaux
  
@@ -133,4 +133,15 @@ Communication réussie entre les deux réseaux.
 - Routage
 - Réseaux différents
 - Ping
+
+Explication réseau
+ 
+PC1 constate que la destination 192.168.2.10
+n'appartient pas à son réseau local.
+ 
+PC1 envoie donc les paquets à sa passerelle
+192.168.1.1.
+ 
+Le routeur reçoit les paquets et les transmet
+vers le réseau 192.168.2.0/24 afin de joindre PC2.
 
