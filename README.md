@@ -1,15 +1,15 @@
 # AdminSysReseau Lab
- 
+
 Bienvenue sur mon laboratoire personnel d'administration systèmes et réseaux.
- 
+
 ## À propos
- 
-Je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
- 
-Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cicso Packet Tracer.
- 
+
+Bonjour, je m'appelle Eliaz Bouchon, j'ai 25 ans et je suis étudiant en administration systèmes et réseaux à l'EPSI de Nantes.
+
+Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendant mon apprentissage sur Cisco Packet Tracer.
+
 ## Compétences étudiées
- 
+
 - Réseau
 - IPv4
 - DNS
@@ -19,7 +19,7 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - Passerelle
 
 ## Progression
- 
+
 - [x] IPv4
 - [x] Masque de sous-réseau
 - [x] Switch
@@ -31,131 +31,172 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - [ ] Linux
 - [ ] Windows Server
 - [ ] Active Directory
- 
-## Projets
 
-### Projet 1 - Communication dans le même réseau
- 
-## Objectif
- 
+---
+
+# Projets
+
+## Projet 1 - Communication dans le même réseau
+
+### Objectif
+
 Faire communiquer deux machines dans le même réseau à l'aide d'un switch.
- 
-## Topologie
- 
-PC0 --- Switch (commutateur) --- PC1
- 
-## Capture
- 
+
+### Topologie
+
+```text
+PC1 --- Switch (Commutateur) --- PC2
+```
+
+### Capture
+
 <img width="458" height="368" alt="image" src="https://github.com/user-attachments/assets/5a2e0e88-62c9-4b3c-88dd-ac199d8792ad" />
- 
-## Configuration
- 
-### PC0
- 
+
+### Configuration
+
+#### PC1
+
 ```text
 192.168.1.10
 ```
- 
-### PC1
- 
+
+#### PC2
+
 ```text
 192.168.1.20
 ```
- 
-### Masque De Sous-Réseau
- 
+
+#### Masque de sous-réseau
+
 ```text
 255.255.255.0
 ```
- 
-## Test
- 
+
+### Test
+
 ```bash
 ping 192.168.1.20
 ```
- 
-## Résultat
- 
+
+### Résultat
+
 ```text
 4 paquets envoyés
 4 paquets reçus
 0 paquet perdu
 ```
- 
-## Ce que j'ai appris
- 
+
+### Ce que j'ai appris
+
 - Configurer une adresse IPv4
 - Configurer un masque de sous-réseau
 - Utiliser un switch (commutateur)
-- Tester la connectivité avec ping
+- Tester la connectivité avec la commande ping
 - Comprendre la communication dans un même réseau
- 
-## Explication réseau
- 
+
+### Explication réseau
+
 Les deux machines appartiennent au réseau :
- 
+
 ```text
 192.168.1.0/24
 ```
- 
-Elles peuvent donc communiquer directement à travers le switch (commutateur) sans utiliser de routeur ni de passerelle.
+
+Elles peuvent donc communiquer directement à travers le switch sans utiliser de routeur ni de passerelle.
+
+---
 
 ## Projet 2 - Communication entre deux réseaux
- 
+
 ### Objectif
- 
+
 Faire communiquer deux réseaux différents grâce à un routeur.
- 
+
 ### Topologie
 
+```text
 PC1 --- Switch1 --- Routeur --- Switch2 --- PC2
+```
 
- ## Capture
- 
+### Capture
+
 <img width="795" height="321" alt="image" src="https://github.com/user-attachments/assets/6e6a8962-d079-4d07-9bd7-3f504d46b1a3" />
 
 ### Réseau 1
- 
+
 ```text
-192.168.1.0/24
+Réseau : 192.168.1.0/24
+
 PC1 : 192.168.1.10
 Passerelle : 192.168.1.1
 ```
- 
+
 ### Réseau 2
- 
+
 ```text
-192.168.2.0/24
+Réseau : 192.168.2.0/24
+
 PC2 : 192.168.2.10
 Passerelle : 192.168.2.1
 ```
- 
+
 ### Test
- 
+
 ```bash
 ping 192.168.2.10
 ```
- 
+
 ### Résultat
- 
+
+```text
 Communication réussie entre les deux réseaux.
- 
+```
+
 ### Ce que j'ai appris
- 
-- Routeur
-- Passerelle
-- Routage
-- Réseaux différents
-- Ping
 
-## Explication réseau
- 
-PC1 constate que la destination 192.168.2.10
-n'appartient pas à son réseau local.
- 
-PC1 envoie donc les paquets à sa passerelle
-192.168.1.1.
- 
-Le routeur reçoit les paquets et les transmet
-vers le réseau 192.168.2.0/24 afin de joindre PC2.
+- Configurer un routeur
+- Comprendre le rôle d'une passerelle
+- Comprendre le routage
+- Faire communiquer des réseaux différents
+- Utiliser la commande ping pour tester la connectivité
 
+### Explication réseau
+
+PC1 constate que l'adresse de destination :
+
+```text
+192.168.2.10
+```
+
+n'appartient pas à son réseau local :
+
+```text
+192.168.1.0/24
+```
+
+PC1 envoie donc les paquets à sa passerelle :
+
+```text
+192.168.1.1
+```
+
+Le routeur reçoit les paquets, détermine le réseau de destination et les transmet vers :
+
+```text
+192.168.2.0/24
+```
+
+afin de joindre PC2.
+
+---
+
+## Prochaines étapes
+
+- [ ] DHCP
+- [ ] DNS pratique
+- [ ] VLAN
+- [ ] Linux Ubuntu Server
+- [ ] SSH
+- [ ] Windows Server
+- [ ] Active Directory
+- [ ] PowerShell
