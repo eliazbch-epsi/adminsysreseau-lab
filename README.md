@@ -17,6 +17,20 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - Switch (Commutateur)
 - Routeur
 - Passerelle
+
+## Progression
+ 
+- [x] IPv4
+- [x] Masque de sous-réseau
+- [x] Switch
+- [x] Routeur
+- [x] Passerelle
+- [ ] DHCP
+- [ ] DNS pratique
+- [ ] VLAN
+- [ ] Linux
+- [ ] Windows Server
+- [ ] Active Directory
  
 ## Projets
 
