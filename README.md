@@ -17,8 +17,6 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - Switch
 - Routeur
 - Passerelle
-- Linux
-- Windows Server
  
 ## Projets
 
