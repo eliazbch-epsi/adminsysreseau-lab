@@ -220,7 +220,7 @@ PC1 ---- Switch1 (Commutateur) ---- Server1
 ### Équipement utilisé
  
 ```text
-- Un poste client nommé PC1
+- Un PC (machine) nommé PC1
 - Un switch nommé Switch1
 - Un serveur nommé Server1
 ```
@@ -273,6 +273,8 @@ Desktop → IP Configuration
  
 ```text
 DHCP request successful
+
+le server DHCP a attribué automatiquement une adresse ip au pc1 
 ```
  
 Le poste client a obtenu automatiquement :
@@ -291,6 +293,7 @@ Passerelle : 192.168.1.1
 - Comprendre le rôle du DHCP
 - Diagnostiquer un problème d'attribution d'adresse IP
 - Comprendre la différence entre une adresse IP statique et dynamique
+- Reconnaître une adresse APIPA (169.254.x.x)
  
 ### Explication réseau
  
