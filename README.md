@@ -17,6 +17,10 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - Switch (Commutateur)
 - Routeur
 - Passerelle
+- Vlan
+- Linux
+- Windows Server
+- Active directory
 
 ## Progression
 
@@ -26,7 +30,7 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - [x] Routeur
 - [x] Passerelle
 - [x] DHCP
-- [ ] DNS pratique
+- [x] DNS pratique
 - [ ] VLAN
 - [ ] Linux
 - [ ] Windows Server
@@ -193,7 +197,7 @@ afin de joindre PC2.
 ## Prochaines étapes
 
 - [x] DHCP
-- [ ] DNS pratique
+- [x] DNS pratique
 - [ ] VLAN
 - [ ] Linux Ubuntu Server
 - [ ] SSH
@@ -348,4 +352,169 @@ J'ai créé plusieurs pools DHCP et j'ai dû identifier celui qui était réelle
 Après avoir corrigé ma configuration, le poste client a pu obtenir automatiquement une adresse IP depuis le serveur DHCP.
  
 J'ai également appris à reconnaître une adresse APIPA (169.254.x.x), qui indique généralement qu'un poste n'a pas réussi à contacter un serveur DHCP.
+```
+
+## Projet 4 - DNS
+ 
+### Objectif
+ 
+Mettre en place un serveur DNS capable de résoudre un nom de domaine en adresse IP.
+ 
+### Topologie
+ 
+```text
+PC1 ---- Switch1 ---- Server1
+```
+ 
+### Capture
+ 
+<img width="468" height="143" alt="image" src="https://github.com/user-attachments/assets/f77ab266-5dca-4bf6-a508-0763ad4ddc38" />
+ 
+### Équipement utilisé
+ 
+```text
+- Un poste client nommé PC1
+- Un switch nommé Switch1
+- Un serveur DNS nommé Server1
+```
+ 
+### Configuration du serveur DNS
+ 
+```text
+Adresse IP du serveur : 192.168.1.100
+ 
+Masque de sous-réseau : 255.255.255.0
+ 
+DNS : 192.168.1.100
+```
+ 
+### Configuration du poste client
+ 
+```text
+Adresse IP : 192.168.1.110
+ 
+Masque de sous-réseau : 255.255.255.0
+ 
+DNS : 192.168.1.100
+```
+ 
+### Configuration DNS
+ 
+```text
+Nom de domaine : serveur.local
+ 
+Adresse IP associée : 192.168.1.100
+ 
+Type : A Record
+```
+ 
+### Test
+ 
+```bash
+nslookup serveur.local
+```
+ 
+### Résultat
+ 
+```text
+Name : serveur.local
+Address : 192.168.1.100
+```
+ 
+Le serveur DNS a correctement converti le nom de domaine en adresse IP.
+ 
+### Ce que j'ai appris
+ 
+- Configurer un serveur DNS
+- Créer un enregistrement DNS (A Record)
+- Résoudre un nom de domaine en adresse IP
+- Utiliser la commande nslookup
+- Comprendre le rôle du DNS dans un réseau
+ 
+### Explication réseau
+ 
+Le DNS permet de traduire un nom de domaine en adresse IP.
+ 
+Par exemple :
+ 
+```text
+serveur.local
+↓
+192.168.1.100
+```
+ 
+Les utilisateurs retiennent plus facilement un nom qu'une adresse IP.
+ 
+Lorsqu'un utilisateur saisit :
+ 
+```text
+serveur.local
+```
+ 
+le poste envoie une requête au serveur DNS.
+ 
+Le serveur DNS répond avec l'adresse IP associée :
+ 
+```text
+192.168.1.100
+```
+ 
+Le poste peut alors communiquer avec le serveur sans que l'utilisateur ait besoin de connaître son adresse IP.
+ 
+### Difficultés rencontrées
+ 
+```text
+- Comprendre la différence entre un nom de domaine et une adresse IP.
+- Configurer correctement le serveur DNS.
+- Configurer l'adresse du serveur DNS sur le poste client.
+- Comprendre pourquoi le nom de domaine n'était pas résolu.
+```
+ 
+### Solution apportée
+ 
+```text
+J'ai créé un enregistrement DNS de type A Record.
+ 
+J'ai associé le nom serveur.local à l'adresse IP 192.168.1.100.
+ 
+J'ai ensuite configuré PC1 afin qu'il utilise le serveur DNS 192.168.1.100.
+ 
+Enfin, j'ai vérifié le fonctionnement avec la commande nslookup serveur.local qui a correctement retourné l'adresse IP du serveur.
+```
+
+## À retenir
+ 
+```text
+IP = identifie une machine
+ 
+Masque = sépare la partie réseau de la partie machine
+ 
+Switch = relie les machines d'un même réseau
+ 
+Routeur = relie plusieurs réseaux différents
+ 
+Passerelle = porte de sortie d'un réseau local
+ 
+DHCP = attribue automatiquement :
+- IP
+- Masque
+- Passerelle
+- DNS
+ 
+APIPA (169.254.x.x) =
+le PC n'a pas réussi à joindre un serveur DHCP
+ 
+DNS = traduit un nom de domaine en adresse IP
+ 
+Exemple :
+ 
+serveur.local
+↓
+192.168.1.100
+ 
+Même réseau
+→ communication directe
+ 
+Réseaux différents
+→ routeur obligatoire
 ```
