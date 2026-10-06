@@ -202,7 +202,7 @@ afin de joindre PC2.
 - [ ] PowerShell
 
 ## Projet 3 - DHCP
-
+ 
 ### Objectif
  
 Attribuer automatiquement une configuration réseau aux postes du réseau grâce à un serveur DHCP.
@@ -210,111 +210,139 @@ Attribuer automatiquement une configuration réseau aux postes du réseau grâce
 ### Topologie
  
 ```text
-À compléter
+PC1 ---- Switch1 (Commutateur) ---- Server1
 ```
  
 ### Capture
  
-À ajouter
- 
+<img width="496" height="152" alt="image" src="https://github.com/user-attachments/assets/c394815a-934c-44ee-abe8-cf2488836e39" />
+
 ### Équipement utilisé
  
 ```text
-À compléter
+- Un poste client nommé PC1
+- Un switch nommé Switch1
+- Un serveur nommé Server1
 ```
  
 ### Configuration du serveur DHCP
  
 ```text
-Adresse IP du serveur :
-...
+Adresse IP du serveur : 192.168.1.100
  
-Masque :
-...
+Masque de sous-réseau : 255.255.255.0
  
-Passerelle :
-...
+Passerelle : 192.168.1.1
 ```
  
 ### Configuration de la plage DHCP
  
 ```text
-Nom du pool :
-...
+Nom du pool : test
  
-Adresse de départ :
-...
+Adresse de départ : 192.168.1.110
  
-Masque :
-...
+Masque de sous-réseau : 255.255.255.0
  
-Passerelle :
-...
+Passerelle : 192.168.1.1
  
-DNS :
-...
+DNS : 0.0.0.0
  
-Nombre maximum d'utilisateurs :
-...
+Nombre maximum d'utilisateurs : 156
 ```
  
 ### Test
  
 ```text
-À compléter
+1. J'ai configuré une adresse IP statique sur le serveur.
+ 
+2. J'ai activé le service DHCP sur le serveur.
+ 
+3. J'ai créé un pool DHCP contenant une plage d'adresses IP disponibles.
+ 
+4. Sur le poste PC1, j'ai ouvert :
+ 
+Desktop → IP Configuration
+ 
+5. J'ai sélectionné DHCP afin de demander automatiquement une configuration réseau.
+ 
+6. Après actualisation, le poste a reçu automatiquement sa configuration réseau depuis le serveur DHCP.
 ```
  
 ### Résultat
  
 ```text
-À compléter
+DHCP request successful
+```
+ 
+Le poste client a obtenu automatiquement :
+ 
+```text
+Adresse IP : 192.168.1.110
+Masque : 255.255.255.0
+Passerelle : 192.168.1.1
 ```
  
 ### Ce que j'ai appris
  
-- ...
-- ...
-- ...
-- ...
-- ...
+- Configurer un serveur DHCP
+- Créer un pool DHCP
+- Attribuer automatiquement une configuration réseau à un poste
+- Comprendre le rôle du DHCP
+- Diagnostiquer un problème d'attribution d'adresse IP
+- Comprendre la différence entre une adresse IP statique et dynamique
  
 ### Explication réseau
  
-Le serveur DHCP permet de :
+Le serveur DHCP permet de configurer automatiquement :
  
 ```text
-À compléter
+- une adresse IP
+- un masque de sous-réseau
+- une passerelle par défaut
+- un serveur DNS
 ```
  
-Lorsque le poste démarre :
+Lorsqu'un poste démarre, il peut demander automatiquement une configuration réseau au serveur DHCP.
+ 
+Le serveur DHCP lui attribue alors automatiquement :
  
 ```text
-À compléter
-```
- 
-Le serveur DHCP lui attribue automatiquement :
- 
-```text
-- ...
-- ...
-- ...
-- ...
+- une adresse IP
+- un masque de sous-réseau
+- une passerelle par défaut
+- un serveur DNS
 ```
  
 L'utilisateur n'a donc plus besoin de configurer manuellement :
  
 ```text
-À compléter
+- l'adresse IP
+- le masque de sous-réseau
+- la passerelle
+- le DNS
 ```
+ 
+Grâce au DHCP, la configuration de plusieurs postes sur un réseau est beaucoup plus rapide et plus simple.
  
 ### Difficultés rencontrées
  
 ```text
-À compléter
+- Comprendre le fonctionnement d'un pool DHCP.
+- Comprendre quelles adresses IP attribuer.
+- Comprendre l'utilité du DHCP.
+- Tester la distribution automatique d'une adresse IP.
+- Identifier les erreurs de configuration.
 ```
  
 ### Solution apportée
  
 ```text
-À compléter
+J'ai configuré une adresse IP statique sur le serveur DHCP.
+ 
+J'ai créé plusieurs pools DHCP et j'ai dû identifier celui qui était réellement utilisé.
+ 
+Après avoir corrigé ma configuration, le poste client a pu obtenir automatiquement une adresse IP depuis le serveur DHCP.
+ 
+J'ai également appris à reconnaître une adresse APIPA (169.254.x.x), qui indique généralement qu'un poste n'a pas réussi à contacter un serveur DHCP.
 ```
