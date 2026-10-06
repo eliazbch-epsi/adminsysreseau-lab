@@ -482,6 +482,164 @@ J'ai ensuite configuré PC1 afin qu'il utilise le serveur DNS 192.168.1.100.
 Enfin, j'ai vérifié le fonctionnement avec la commande nslookup serveur.local qui a correctement retourné l'adresse IP du serveur.
 ```
 
+## Projet 5 - VLAN
+ 
+### Objectif
+ 
+Segmenter un réseau en plusieurs réseaux logiques grâce aux VLAN afin d'isoler la communication entre certains postes tout en utilisant un seul switch.
+ 
+### Topologie
+ 
+```text
+PC1
+|
+|
+Switch1 ----- PC3
+|
+|
+PC2
+|
+|
+PC4
+```
+ 
+### Capture
+ 
+<img width="665" height="418" alt="image" src="https://github.com/user-attachments/assets/897922d9-9c49-4cbc-a75b-b1b4dc30e7de" />
+ 
+### Équipement utilisé
+ 
+```text
+- Deux postes clients dans le VLAN 10 (PC1 et PC2)
+- Deux postes clients dans le VLAN 20 (PC3 et PC4)
+- Un switch nommé Switch1
+```
+ 
+### Configuration des VLAN
+ 
+```text
+VLAN 10
+ 
+PC1 : 192.168.1.10
+PC2 : 192.168.1.20
+```
+ 
+```text
+VLAN 20
+ 
+PC3 : 192.168.1.30
+PC4 : 192.168.1.40
+```
+ 
+### Affectation des ports
+ 
+```text
+Fa0/1 → VLAN 10
+Fa0/2 → VLAN 10
+ 
+Fa0/3 → VLAN 20
+Fa0/4 → VLAN 20
+```
+ 
+### Tests réalisés
+ 
+Depuis PC1 :
+ 
+```bash
+ping 192.168.1.20
+```
+ 
+Résultat :
+ 
+```text
+Réussi
+```
+ 
+Depuis PC1 :
+ 
+```bash
+ping 192.168.1.30
+```
+ 
+Résultat :
+ 
+```text
+Échec
+```
+ 
+Depuis PC1 :
+ 
+```bash
+ping 192.168.1.40
+```
+ 
+Résultat :
+ 
+```text
+Échec
+```
+ 
+### Résultat
+ 
+```text
+PC1 peut communiquer avec PC2.
+ 
+PC1 ne peut pas communiquer avec PC3 ni PC4.
+```
+ 
+Le VLAN isole correctement les deux groupes de machines.
+ 
+### Ce que j'ai appris
+ 
+- Créer des VLAN sur un switch
+- Affecter des ports à des VLAN
+- Comprendre le principe de segmentation réseau
+- Tester la communication entre plusieurs VLAN
+- Vérifier l'isolation des postes avec ping
+ 
+### Explication réseau
+ 
+Un VLAN (Virtual LAN) permet de créer plusieurs réseaux logiques sur un même switch.
+ 
+Dans ce projet :
+ 
+```text
+VLAN 10 :
+PC1 et PC2
+```
+ 
+```text
+VLAN 20 :
+PC3 et PC4
+```
+ 
+Les postes appartenant au même VLAN peuvent communiquer entre eux.
+ 
+Les postes appartenant à des VLAN différents ne peuvent pas communiquer directement, même s'ils sont branchés sur le même switch.
+ 
+Grâce aux VLAN, il est possible de séparer plusieurs services ou départements d'une entreprise sur une même infrastructure réseau.
+ 
+### Difficultés rencontrées
+ 
+```text
+- Comprendre le fonctionnement des VLAN.
+- Créer les VLAN sur le switch.
+- Affecter les bons ports aux bons VLAN.
+- Vérifier que les machines étaient correctement isolées.
+```
+ 
+### Solution apportée
+ 
+```text
+J'ai créé un VLAN 10 et un VLAN 20 sur le switch.
+ 
+J'ai ensuite affecté chaque port du switch au VLAN correspondant.
+ 
+Enfin, j'ai vérifié le bon fonctionnement à l'aide de la commande ping.
+ 
+Les tests ont confirmé que les postes d'un même VLAN communiquent entre eux tandis que les postes de VLAN différents restent isolés.
+```
+
 ## À retenir
  
 ```text
@@ -517,4 +675,16 @@ Même réseau
  
 Réseaux différents
 → routeur obligatoire
+
+VLAN = Virtual Lan
+
+Permet de créer plusieurs réseaux logiques
+sur un même switch.
+ 
+Même VLAN
+→ communication autorisée
+ 
+VLAN différents
+→ communication impossible
+(sans routage inter-VLAN)
 ```
