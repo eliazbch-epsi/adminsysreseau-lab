@@ -215,7 +215,7 @@ PC1 ---- Switch1 (Commutateur) ---- Server1
  
 ### Capture
  
-<img width="496" height="152" alt="image" src="https://github.com/user-attachments/assets/c394815a-934c-44ee-abe8-cf2488836e39" />
+<img width="453" height="136" alt="image" src="https://github.com/user-attachments/assets/0150a18f-58aa-4f43-be5c-6be3dd5c1ece" />
 
 ### Équipement utilisé
  
