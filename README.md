@@ -678,55 +678,6 @@ Difficultés rencontrées
 - Démarrer correctement l'installation Ubuntu.
 Solution apportée
 Après plusieurs ajustements dans VirtualBox, Ubuntu Server a pu être installé et démarré correctement.
-Projet 7 - Gestion des fichiers Linux
-Objectif
-Apprendre à naviguer dans l'arborescence Linux et gérer des fichiers et des dossiers depuis le terminal.
-
-Commandes utilisées
-pwd
-ls
-cd
-mkdir
-touch
-rm
-Test
-Création de l'arborescence :
-
-projets
-├── linux
-│   └── commandes.txt
-├── reseau
-│   └── notes.txt
-└── windows
-Résultat
-Les dossiers et fichiers ont été créés avec succès.
-
-La navigation dans les répertoires fonctionne correctement.
-Ce que j'ai appris
-Utiliser pwd
-Utiliser ls
-Utiliser cd
-Créer des dossiers avec mkdir
-Créer des fichiers avec touch
-Supprimer des fichiers et des dossiers
-Explication
-pwd
-→ Où suis-je ?
-
-ls
-→ Que contient le dossier actuel ?
-
-cd
-→ Se déplacer dans l'arborescence Linux.
-Difficultés rencontrées
-- Comprendre l'arborescence Linux.
-- Comprendre le dossier courant.
-- Comprendre le fonctionnement des commandes Linux.
-Solution apportée
-J'ai utilisé régulièrement les commandes pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
-
-J'ai répété plusieurs fois les manipulations pour comprendre la logique de navigation sous Linux.
-
 ## À retenir
  
 ```text
