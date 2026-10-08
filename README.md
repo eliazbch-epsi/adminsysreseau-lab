@@ -649,6 +649,9 @@ Windows 11
 VirtualBox
 ↓
 Ubuntu Server
+Capture
+À ajouter
+
 Équipement utilisé
 - Windows 11
 - VirtualBox
@@ -659,12 +662,12 @@ RAM : 4096 Mo
 CPU : 2
 
 Disque : 80 Go
-Test
-Commandes utilisées :
-
+Commandes utilisées
 whoami
 pwd
 ls
+Test
+Connexion à Ubuntu Server et exécution des commandes Linux de base.
 Résultat
 Connexion réussie à Ubuntu Server.
 Ce que j'ai appris
@@ -673,11 +676,17 @@ Créer une machine virtuelle
 Utiliser VirtualBox
 Utiliser le terminal Linux
 Se connecter à Ubuntu Server
+Explication
+Ubuntu Server est un système Linux utilisé pour l'administration de serveurs.
+
+Il a été installé dans VirtualBox afin d'apprendre Linux sans modifier mon ordinateur principal.
 Difficultés rencontrées
 - Comprendre la configuration de VirtualBox.
 - Démarrer correctement l'installation Ubuntu.
 Solution apportée
-Après plusieurs ajustements dans VirtualBox, Ubuntu Server a pu être installé et démarré correctement.
+Après plusieurs ajustements dans VirtualBox,
+Ubuntu Server a pu être installé et démarré correctement.
+
 ## À retenir
  
 ```text
