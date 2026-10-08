@@ -31,7 +31,7 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - [x] Passerelle
 - [x] DHCP
 - [x] DNS pratique
-- [ ] VLAN
+- [x] VLAN
 - [ ] Linux
 - [ ] Windows Server
 - [ ] Active Directory
@@ -198,8 +198,8 @@ afin de joindre PC2.
 
 - [x] DHCP
 - [x] DNS pratique
-- [ ] VLAN
-- [ ] Linux Ubuntu Server
+- [x] VLAN
+- [x] Linux Ubuntu Server
 - [ ] SSH
 - [ ] Windows Server
 - [ ] Active Directory
