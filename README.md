@@ -639,9 +639,7 @@ Enfin, j'ai vérifié le bon fonctionnement à l'aide de la commande ping.
  
 Les tests ont confirmé que les postes d'un même VLAN communiquent entre eux tandis que les postes de VLAN différents restent isolés.
 ```
-
-## Projet 6 - Installation Ubuntu Server
-
+Projet 6 - Installation Ubuntu Server
 Objectif
 Installer Ubuntu Server dans une machine virtuelle afin de découvrir l'administration système Linux.
 
@@ -656,46 +654,35 @@ Ubuntu Server
 - VirtualBox
 - Ubuntu Server LTS
 Configuration
-
 RAM : 4096 Mo
+
 CPU : 2
 
 Disque : 80 Go
-
 Test
 Commandes utilisées :
 
-- whoami
-- pwd
-- ls
-  
+whoami
+pwd
+ls
 Résultat
 Connexion réussie à Ubuntu Server.
-
-Ce que j'ai appris :
-
-- Installer Ubuntu Server
-- Créer une machine virtuelle
-- Utiliser VirtualBox
-- Utiliser le terminal Linux
-- Se connecter à un serveur Linux
-
-Difficultés rencontrées :
-
+Ce que j'ai appris
+Installer Ubuntu Server
+Créer une machine virtuelle
+Utiliser VirtualBox
+Utiliser le terminal Linux
+Se connecter à Ubuntu Server
+Difficultés rencontrées
 - Comprendre la configuration de VirtualBox.
 - Démarrer correctement l'installation Ubuntu.
-
 Solution apportée
 Après plusieurs ajustements dans VirtualBox, Ubuntu Server a pu être installé et démarré correctement.
-
-## Projet 7 - Gestion des fichiers Linux
-
+Projet 7 - Gestion des fichiers Linux
 Objectif
+Apprendre à naviguer dans l'arborescence Linux et gérer des fichiers et des dossiers depuis le terminal.
 
-Apprendre à naviguer dans l'arborescence Linux et gérer des fichiers et dossiers depuis le terminal.
-
-Commandes utilisées :
-
+Commandes utilisées
 pwd
 ls
 cd
@@ -703,44 +690,42 @@ mkdir
 touch
 rm
 Test
-
 Création de l'arborescence :
 
-| projets
-|--> linux
-|       --> commandes.txt
-|--> reseau
-|       --> notes.txt
-|--> windows
-
-Résultat :
-
+projets
+├── linux
+│   └── commandes.txt
+├── reseau
+│   └── notes.txt
+└── windows
+Résultat
 Les dossiers et fichiers ont été créés avec succès.
 
-Ce que j'ai appris :
-
+La navigation dans les répertoires fonctionne correctement.
+Ce que j'ai appris
 Utiliser pwd
 Utiliser ls
 Utiliser cd
 Créer des dossiers avec mkdir
 Créer des fichiers avec touch
-Supprimer des fichiers et dossiers
-
+Supprimer des fichiers et des dossiers
 Explication
+pwd
+→ Où suis-je ?
 
-pwd : Où suis-je ?
-ls : Que contient le dossier actuel ?
-cd : Se déplacer dans l'arborescence Linux.
+ls
+→ Que contient le dossier actuel ?
 
-Difficultés rencontrées :
-
+cd
+→ Se déplacer dans l'arborescence Linux.
+Difficultés rencontrées
 - Comprendre l'arborescence Linux.
-- Comprendre l'environnement linux et ses commandes.
+- Comprendre le dossier courant.
+- Comprendre le fonctionnement des commandes Linux.
+Solution apportée
+J'ai utilisé régulièrement les commandes pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
 
-Solution apportée :
-
-J'ai utilisé régulièrement pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
-``
+J'ai répété plusieurs fois les manipulations pour comprendre la logique de navigation sous Linux.
 
 ## À retenir
  
@@ -789,4 +774,34 @@ Même VLAN
 VLAN différents
 → communication impossible
 (sans routage inter-VLAN)
+
+Commandes Linux :
+
+pwd : Où suis-je ?
+ls  : Que contient le dossier actuel ?
+cd : Se déplacer dans les dossiers
+mkdir : Créer un dossier
+touch :  Créer un fichier vide
+rm :  Supprimer un fichier
+rm -r : Supprimer un dossier et son contenu
+whoami : Afficher l'utilisateur connecté
+adduser : Créer un utilisateur Linux
+su : Changer d'utilisateur
+Exemple :
+su admin : Connexion avec le compte admin
+Exit  :  Quitter l'utilisateur actuel
+Id  :  Afficher les informations d'un utilisateur
+Exemple :
+id admin : UID, GID et groupes
+cat :  Afficher le contenu d'un fichier
+Exemple :
+cat notes.txt
+echo : Écrire du texte dans un fichier
+Exemple :
+echo "Bonjour" > test.txt
+chown : Changer le propriétaire d'un fichier
+Exemple :
+chown admin secret.txt
+->  secret.txt appartient désormais à admin
+
 ```
