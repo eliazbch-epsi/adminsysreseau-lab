@@ -639,53 +639,203 @@ Enfin, j'ai vérifié le bon fonctionnement à l'aide de la commande ping.
  
 Les tests ont confirmé que les postes d'un même VLAN communiquent entre eux tandis que les postes de VLAN différents restent isolés.
 ```
-Projet 6 - Installation Ubuntu Server
-Objectif
+## Projet 6 - Installation Ubuntu Server
+
+### Objectif
+
 Installer Ubuntu Server dans une machine virtuelle afin de découvrir l'administration système Linux.
 
-Topologie
+### Topologie
+
+```text
 Windows 11
 ↓
 VirtualBox
 ↓
 Ubuntu Server
-Capture
+```
+
+### Capture
+
 À ajouter
 
-Équipement utilisé
+### Équipement utilisé
+
+```text
 - Windows 11
 - VirtualBox
 - Ubuntu Server LTS
-Configuration
+```
+
+### Configuration
+
+```text
 RAM : 4096 Mo
-
 CPU : 2
-
 Disque : 80 Go
-Commandes utilisées
+```
+
+### Commandes utilisées
+
+```bash
 whoami
 pwd
 ls
-Test
-Connexion à Ubuntu Server et exécution des commandes Linux de base.
-Résultat
-Connexion réussie à Ubuntu Server.
-Ce que j'ai appris
-Installer Ubuntu Server
-Créer une machine virtuelle
-Utiliser VirtualBox
-Utiliser le terminal Linux
-Se connecter à Ubuntu Server
-Explication
-Ubuntu Server est un système Linux utilisé pour l'administration de serveurs.
+```
 
-Il a été installé dans VirtualBox afin d'apprendre Linux sans modifier mon ordinateur principal.
-Difficultés rencontrées
+### Test
+
+```text
+Connexion à Ubuntu Server et exécution des commandes Linux de base.
+```
+
+### Résultat
+
+```text
+Connexion réussie à Ubuntu Server.
+```
+
+### Ce que j'ai appris
+
+- Installer Ubuntu Server
+- Créer une machine virtuelle
+- Utiliser VirtualBox
+- Utiliser le terminal Linux
+- Se connecter à Ubuntu Server
+
+### Explication
+
+```text
+Ubuntu Server est un système d'exploitation Linux destiné à l'administration système.
+
+Grâce à VirtualBox, il est possible d'installer Ubuntu dans une machine virtuelle sans modifier le système principal de l'ordinateur.
+```
+
+### Difficultés rencontrées
+
+```text
 - Comprendre la configuration de VirtualBox.
 - Démarrer correctement l'installation Ubuntu.
-Solution apportée
-Après plusieurs ajustements dans VirtualBox,
-Ubuntu Server a pu être installé et démarré correctement.
+- Configurer correctement la machine virtuelle.
+```
+
+### Solution apportée
+
+```text
+Après plusieurs ajustements dans VirtualBox, Ubuntu Server a pu être installé et démarré correctement.
+
+Les commandes Linux de base ont permis de vérifier le bon fonctionnement du système.
+```
+
+---
+
+## Projet 7 - Gestion des fichiers Linux
+
+### Objectif
+
+Apprendre à naviguer dans l'arborescence Linux et gérer des fichiers et dossiers depuis le terminal.
+
+### Topologie
+
+```text
+Ubuntu Server
+↓
+Terminal Linux
+↓
+Gestion des fichiers
+```
+
+### Capture
+
+À ajouter
+
+### Équipement utilisé
+
+```text
+- Ubuntu Server
+- Terminal Linux
+```
+
+### Configuration
+
+```text
+projets
+├── linux
+│   └── commandes.txt
+├── reseau
+│   └── notes.txt
+└── windows
+```
+
+### Commandes utilisées
+
+```bash
+pwd
+ls
+cd
+mkdir
+touch
+rm
+```
+
+### Test
+
+```text
+Création de dossiers et fichiers.
+
+Navigation dans l'arborescence Linux.
+
+Suppression et vérification de fichiers.
+```
+
+### Résultat
+
+```text
+Les dossiers et fichiers ont été créés avec succès.
+
+La navigation dans les répertoires fonctionne correctement.
+```
+
+### Ce que j'ai appris
+
+- Utiliser pwd
+- Utiliser ls
+- Utiliser cd
+- Créer des dossiers avec mkdir
+- Créer des fichiers avec touch
+- Supprimer des fichiers et des dossiers
+
+### Explication
+
+```text
+Linux est organisé sous forme d'arborescence.
+
+pwd permet de connaître son emplacement.
+
+ls permet d'afficher le contenu du dossier actuel.
+
+cd permet de se déplacer dans les dossiers.
+
+mkdir permet de créer un dossier.
+
+touch permet de créer un fichier.
+```
+
+### Difficultés rencontrées
+
+```text
+- Comprendre l'arborescence Linux.
+- Comprendre le dossier courant.
+- Comprendre le fonctionnement des commandes Linux.
+```
+
+### Solution apportée
+
+```text
+J'ai utilisé régulièrement les commandes pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
+
+J'ai répété les manipulations plusieurs fois afin de comprendre la logique de navigation sous Linux.
+```
 
 ## À retenir
  
