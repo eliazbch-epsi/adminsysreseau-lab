@@ -640,7 +640,7 @@ Enfin, j'ai vérifié le bon fonctionnement à l'aide de la commande ping.
 Les tests ont confirmé que les postes d'un même VLAN communiquent entre eux tandis que les postes de VLAN différents restent isolés.
 ```
 
-Projet 6 - Installation Ubuntu Server
+## Projet 6 - Installation Ubuntu Server
 
 Objectif
 Installer Ubuntu Server dans une machine virtuelle afin de découvrir l'administration système Linux.
@@ -706,12 +706,12 @@ Test
 
 Création de l'arborescence :
 
-projets
-    - linux
-            - commandes.txt
-    - reseau
-            - notes.txt
-    - windows
+| projets
+|--> linux
+|       --> commandes.txt
+|--> reseau
+|       --> notes.txt
+|--> windows
 
 Résultat :
 
