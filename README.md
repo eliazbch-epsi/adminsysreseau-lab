@@ -655,10 +655,6 @@ VirtualBox
 Ubuntu Server
 ```
 
-### Capture
-
-À ajouter
-
 ### Équipement utilisé
 
 ```text
