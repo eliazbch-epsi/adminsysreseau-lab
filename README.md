@@ -640,6 +640,108 @@ Enfin, j'ai vérifié le bon fonctionnement à l'aide de la commande ping.
 Les tests ont confirmé que les postes d'un même VLAN communiquent entre eux tandis que les postes de VLAN différents restent isolés.
 ```
 
+Projet 6 - Installation Ubuntu Server
+
+Objectif
+Installer Ubuntu Server dans une machine virtuelle afin de découvrir l'administration système Linux.
+
+Topologie
+Windows 11
+↓
+VirtualBox
+↓
+Ubuntu Server
+Équipement utilisé
+- Windows 11
+- VirtualBox
+- Ubuntu Server LTS
+Configuration
+
+RAM : 4096 Mo
+CPU : 2
+
+Disque : 80 Go
+
+Test
+Commandes utilisées :
+
+- whoami
+- pwd
+- ls
+  
+Résultat
+Connexion réussie à Ubuntu Server.
+
+Ce que j'ai appris :
+
+- Installer Ubuntu Server
+- Créer une machine virtuelle
+- Utiliser VirtualBox
+- Utiliser le terminal Linux
+- Se connecter à un serveur Linux
+
+Difficultés rencontrées :
+
+- Comprendre la configuration de VirtualBox.
+- Démarrer correctement l'installation Ubuntu.
+
+Solution apportée
+Après plusieurs ajustements dans VirtualBox, Ubuntu Server a pu être installé et démarré correctement.
+
+## Projet 7 - Gestion des fichiers Linux
+
+Objectif
+
+Apprendre à naviguer dans l'arborescence Linux et gérer des fichiers et dossiers depuis le terminal.
+
+Commandes utilisées :
+
+pwd
+ls
+cd
+mkdir
+touch
+rm
+Test
+
+Création de l'arborescence :
+
+projets
+    - linux
+            - commandes.txt
+    - reseau
+            - notes.txt
+    - windows
+
+Résultat :
+
+Les dossiers et fichiers ont été créés avec succès.
+
+Ce que j'ai appris :
+
+Utiliser pwd
+Utiliser ls
+Utiliser cd
+Créer des dossiers avec mkdir
+Créer des fichiers avec touch
+Supprimer des fichiers et dossiers
+
+Explication
+
+pwd : Où suis-je ?
+ls : Que contient le dossier actuel ?
+cd : Se déplacer dans l'arborescence Linux.
+
+Difficultés rencontrées :
+
+- Comprendre l'arborescence Linux.
+- Comprendre l'environnement linux et ses commandes.
+
+Solution apportée :
+
+J'ai utilisé régulièrement pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
+``
+
 ## À retenir
  
 ```text
