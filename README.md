@@ -18,7 +18,8 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - Routeur
 - Passerelle
 - Vlan
-- Linux
+- Administration Linux
+- Ubuntu Server
 - Windows Server
 - Active directory
 
@@ -32,7 +33,7 @@ Ce dépôt contient mes projets, mes notes et mes laboratoires réalisés pendan
 - [x] DHCP
 - [x] DNS pratique
 - [x] VLAN
-- [ ] Linux
+- [x] Linux
 - [ ] Windows Server
 - [ ] Active Directory
 
@@ -743,7 +744,7 @@ Gestion des fichiers
 
 ### Capture
 
-À ajouter
+<img width="406" height="176" alt="image" src="https://github.com/user-attachments/assets/b4e5bfb3-8d9d-4ad5-ae11-4231f78308fa" />
 
 ### Équipement utilisé
 
@@ -831,6 +832,192 @@ touch permet de créer un fichier.
 J'ai utilisé régulièrement les commandes pwd et ls afin de vérifier mon emplacement et le contenu des dossiers.
 
 J'ai répété les manipulations plusieurs fois afin de comprendre la logique de navigation sous Linux.
+```
+## Projet 8 - Gestion des utilisateurs Linux
+ 
+### Objectif
+ 
+Apprendre à créer et administrer plusieurs utilisateurs sur un système Linux.
+ 
+### Topologie
+ 
+```text
+Ubuntu Server
+↓
+Gestion des utilisateurs Linux
+```
+ 
+### Capture
+ 
+<img width="601" height="230" alt="image" src="https://github.com/user-attachments/assets/96c54ee4-2207-4597-9d1f-f033027e428e" />
+ 
+### Équipement utilisé
+ 
+```text
+- Ubuntu Server
+- Terminal Linux
+```
+ 
+### Commandes utilisées
+ 
+```bash
+adduser
+su
+whoami
+id
+```
+ 
+### Test
+ 
+```text
+Création de deux utilisateurs :
+ 
+- admin
+- stagiaire
+ 
+Connexion avec chaque utilisateur.
+ 
+Vérification de l'utilisateur connecté et des informations associées.
+```
+ 
+### Résultat
+ 
+```text
+Les utilisateurs admin et stagiaire ont été créés avec succès.
+ 
+La connexion avec chacun des utilisateurs fonctionne correctement.
+```
+ 
+### Ce que j'ai appris
+ 
+- Créer un utilisateur Linux
+- Comprendre l'utilité des comptes utilisateurs
+- Changer d'utilisateur avec la commande su
+- Vérifier l'utilisateur connecté avec whoami
+- Afficher les informations d'un utilisateur avec id
+ 
+### Explication
+ 
+```text
+Linux permet de gérer plusieurs utilisateurs sur une même machine.
+ 
+Chaque utilisateur possède son propre mot de passe et ses propres droits.
+ 
+La commande adduser permet de créer un utilisateur.
+ 
+La commande su permet de changer d'utilisateur.
+ 
+La commande whoami permet d'identifier l'utilisateur actuellement connecté.
+```
+ 
+### Difficultés rencontrées
+ 
+```text
+- Comprendre le rôle des utilisateurs sous Linux.
+- Comprendre le changement d'utilisateur avec su.
+- Comprendre pourquoi aucun caractère n'apparaissait lors de la saisie du mot de passe.
+```
+ 
+### Solution apportée
+ 
+```text
+J'ai créé plusieurs utilisateurs et vérifié leur fonctionnement en utilisant les commandes whoami et id.
+ 
+J'ai également testé la connexion avec les différents comptes créés.
+```
+
+## Projet 9 - Permissions Linux
+
+### Objectif
+ 
+Comprendre la gestion des propriétaires et des permissions des fichiers sous Linux.
+ 
+### Topologie
+ 
+```text
+Ubuntu Server
+↓
+Gestion des permissions Linux
+```
+ 
+### Capture
+ 
+<img width="565" height="245" alt="image" src="https://github.com/user-attachments/assets/bf15e756-9e4c-44d4-85b9-453208dda0f7" />
+ 
+### Équipement utilisé
+ 
+```text
+- Ubuntu Server
+- Terminal Linux
+```
+ 
+### Commandes utilisées
+ 
+```bash
+ls -l
+chown
+cat
+echo
+```
+ 
+### Test
+ 
+```text
+Création d'un fichier :
+ 
+secret.txt
+ 
+Modification du propriétaire du fichier :
+ 
+admin
+ 
+Connexion avec l'utilisateur admin.
+ 
+Lecture et modification du fichier.
+```
+ 
+### Résultat
+ 
+```text
+Le propriétaire du fichier a été modifié avec succès.
+ 
+L'utilisateur admin a pu modifier et consulter le contenu du fichier.
+```
+ 
+### Ce que j'ai appris
+ 
+- Comprendre la notion de propriétaire d'un fichier
+- Afficher les informations d'un fichier avec ls -l
+- Changer le propriétaire avec chown
+- Lire un fichier avec cat
+- Écrire dans un fichier avec echo
+ 
+### Explication
+ 
+```text
+Sous Linux, chaque fichier possède un propriétaire.
+ 
+Le propriétaire dispose généralement de droits spécifiques sur le fichier.
+ 
+La commande chown permet de modifier le propriétaire d'un fichier.
+ 
+Dans ce projet, le fichier secret.txt a été attribué à l'utilisateur admin afin qu'il puisse le modifier.
+```
+ 
+### Difficultés rencontrées
+ 
+```text
+- Comprendre la différence entre propriétaire et permissions.
+- Comprendre l'utilité de la commande chown.
+- Différencier les commandes chown et chmod.
+```
+ 
+### Solution apportée
+ 
+```text
+J'ai vérifié le propriétaire du fichier avec la commande ls -l.
+ 
+J'ai changé le propriétaire avec chown puis testé l'accès au fichier avec l'utilisateur admin.
 ```
 
 ## À retenir
